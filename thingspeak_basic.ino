@@ -30,6 +30,8 @@ void loop() {
   float temperature = 25;
   float humidity = 35;
 
-  ThingSpeak.writeField(myChannelNumber, 1, temperature, myWriteApiKey)
-  ThingSpeak.writeField(myChannelNumber, 2, humidity, myWriteApiKey)
+  ThingSpeak.writeField(myChannelNumber, 1, temperature, myWriteApiKey);
+  ThingSpeak.writeField(myChannelNumber, 2, humidity, myWriteApiKey);
+
+ delay(13000);
 }

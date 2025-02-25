@@ -7,6 +7,7 @@
   Serial.begin(9600);
   pinMode (trig, OUTPUT);     //Trig
   pinMode (echo, INPUT);      //Echo
+  pinMode (led , OUTPUT);
 }
 
 void loop (){

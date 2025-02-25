@@ -1,5 +1,6 @@
 #define trig D5
 #define echo D6
+#define led D2
 
  void setup () 
 {
@@ -28,6 +29,13 @@ void loop (){
   //speed of sound or ultrasonic wave = 343 meters per seconds
   //speed of sound or ultrasonic wave = 0.0343 cm per microseconds
   distance = (duration * 0.034)/2;
+
+  int threshold = 5;
+  if (distance < threshold){
+	  digitalWrite(led,HIGH);
+  }else{
+	  digitalWrite(led,LOW);
+  }
 
   //print the distance on serial monitor
   Serial.print("Distance....");
